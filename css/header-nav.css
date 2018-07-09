@@ -12,7 +12,6 @@ header {
 	width: auto;
 	position: relative;
 	top: 0;
-	background-color: #fff0;
 	padding: .5rem;
 	box-shadow: 0 .4rem .4rem #b7b7b7;
 	display: block;
@@ -29,4 +28,29 @@ header:after {
 	height: 100%;
 	opacity: 0.3;
 	z-index: -1;
+}
+.hidden {
+	display: none !important;
+}
+@media only screen and (max-width : 480px) {
+	header {
+		z-index: 1;
+		top: 0;
+		right: 0;		
+	}
+	#nav {		
+		height: 70vh;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.menu {
+		display: block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		padding: .7rem;
+		background-color: #fff;
+	}
 }

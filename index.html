@@ -12,39 +12,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<header>
-			<div id="logo" class="flex flex-12 center">
+
+		<div id="close-nav" class="menu hidden hidden-desktop" onclick="closeNav()">Menú</div>
+		<div id="open-nav" class="menu hidden-desktop" onclick="openNav()">Menú</div>
+
+		<header id="header" class="hidden-mobile">
+
+			<div id="logo" class="flex center">
 				<a href="#">
 					<img src="./img/SantaLouisLogo.png">
 				</a>
 			</div>
-			<nav id="nav" class="flex wrap">
-				<div id="menu" class="flex flex-12 center">
-					<a class="nav-link flex-4" href="#about">Quiénes somos</a>
-					<a class="nav-link flex-4" href="#productos">Nuestros Productos</a>
-					<a class="nav-link flex-4" href="#talles">Talles</a>
-				</div>
+			
+			<nav id="nav" class="flex flex-12 center">
+				<a class="nav-link flex-4" href="#about">Quiénes somos</a>
+				<a class="nav-link flex-4" href="#productos">Nuestros Productos</a>
+				<a class="nav-link flex-4" href="#talles">Talles</a>
 			</nav>
+
 		</header>
+
 		<div class="margen flex center">
 				<img class="padding" src="./img/distintos.png">
 		</div>
+
 		<div class="padding flex center">
 			<img class="home-termica" src="./img/termica1.png">
 			<img class="home-termica" src="./img/termica2.png">
 			<img class="home-termica" src="./img/termica3.png">
 		</div>
+
 		<div id="about" class="flex column center">
+
 			<p class="about1">Somos una empresa de indumentaria deportiva cordobesa. Nuestra misión es no ser más de lo mismo, tratamos de diferenciarnos de las demás marcas a través de nuestros diseños, y a futuro queremos ser líderes en el mercado.</p>
+
 			<ul id="about-list">
 				<li>Para ello trabajamos con telas y productos de primera calidad. </li>
 				<li>Utilizamos costuras resistentes para darle la mejor vida útil a nuestros equipo.</li>
 				<li>Personalizamos el producto junto a la empresa patrocinadora (si tenés sponsor).</li>
 				<li>Ofrecemos amplia variedad de talles y modelos para todos los deportes.</li>
 			</ul>
+
 			<p class="about2">Estamos ubicados en el centro de la ciudad de Córdoba, por el momento sin oficinas comerciales, ya que todos nuestros canales de venta son de forma online, aunque no tenemos ningún inconveniente en programar reuniones con clientes si así lo solicitan.</p>
+
 		</div>
+
 		<div id="productos">
+
 			<div class="padding">
 				<ul id="no-list" class="flex column center">
 					<img src="./img/vector costura.png">
@@ -57,6 +71,10 @@
 					<li>APTA PARA TODO TIPO DE DEPORTES</li>
 				</ul>
 			</div>
+
 		</div>
+
 	</body>
+
+<script type="text/javascript" src="./js/nav.js"></script>
 </html>
