@@ -44,13 +44,11 @@ header:after {
 	opacity: 0.3;
 	z-index: -1;
 }
-#img-manga {
-	background-color: #4c4c4c;
-}
 #about {
 	min-height: 80vh;
-	padding: 0 10%;
+	padding: 0 15%;
 	font-size: 1.33rem;
+	text-align: justify;
 }
 .about1:before {
 	content: "";
