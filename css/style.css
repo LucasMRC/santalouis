@@ -3,7 +3,9 @@
 	font-family: "open sans condensed", sans-serif;
 }
 body {
-	min-height: 100vh
+	min-height: 100vh;
+	background-color: #0003;
+	/*width: 100vw;*/
 }
 .padding {
 	padding: 2rem 0;
@@ -23,18 +25,21 @@ body {
 	position: relative;
 	right: 2.3rem;
 	top: 3rem;
-	background-image: url(../img/vector world.png);
+	background-image: url("../img/vector world.png");
 	background-repeat: no-repeat;
 	height: 3rem;
 	width: 3rem;
 	display: block;
+}
+.full-width {
+	width: 100%;
 }
 .about2:before {
 	content: "";
 	position: relative;
 	right: 2.3rem;
 	top: 3rem;
-	background-image: url(../img/vector gps.png);
+	background-image: url("../img/vector gps.png");
 	background-repeat: no-repeat;
 	height: 3rem;
 	width: 3rem;
@@ -55,13 +60,24 @@ body {
     z-index: -1;
 }*/
 #about-list {
-	list-style-image: url(../img/vector like.png); 
+	list-style-image: url('../img/vector like.png'); 
 }
 #no-list {
 	list-style: none;
-	font-size: inherit;
+	padding: 0;
 	font-size: 1.33rem;
 }
 #no-list > img, li {
 	margin-bottom: 1.33rem;
+}
+.subtitle {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 100;
+	padding: 1rem; 
+	background-color: #fff0;
+	margin: 1rem;
+}
+#talles {
+ 	margin: 3rem auto;
 }
