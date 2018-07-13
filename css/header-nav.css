@@ -54,7 +54,7 @@ header:after {
 		top: 0;
 		right: 0;
 		z-index: 5;
-		padding: .7rem 9rem;
+		padding: .7rem .9rem;
 		background-color: #fffc;
 		border-radius: .5rem;
 	}
