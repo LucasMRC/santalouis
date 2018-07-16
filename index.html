@@ -2,21 +2,22 @@
 <html>
 	<head>
 		<title>SantaLouis</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="./css/flex.css">
 		<link rel="stylesheet" type="text/css" href="./css/header-nav.css">
-		<link rel="shortcut icon" href="https://static.wixstatic.com/media/cd28e7_d512cafb11064e938969ea8829a5fa70%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/cd28e7_d512cafb11064e938969ea8829a5fa70%7Emv2.png" type="image/png">
-		<link rel="apple-touch-icon" href="https://static.wixstatic.com/media/cd28e7_d512cafb11064e938969ea8829a5fa70%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/cd28e7_d512cafb11064e938969ea8829a5fa70%7Emv2.png" type="image/png">
+		<link rel="shortcut icon" href="./img/SL icono.png" type="image/png">
+		<link rel="apple-touch-icon" href="./img/SL icono.png" type="image/png">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 
-		<div id="close-nav" class="menu hidden hidden-desktop" onclick="closeNav()"><img src="./img/menu-icon.png"></div>
-		<div id="open-nav" class="menu hidden-desktop" onclick="openNav()"><img src="./img/menu-icon.png"></div>
+		<div id="close-nav" class="menu hidden hidden-desktop" onclick="closeNav()"><i class="fas fa-times"></i></div>
+		<div id="open-nav" class="menu hidden-desktop" onclick="openNav()"><i class="fas fa-bars"></i></div>
 
-		<header id="header" class="hidden-mobile">
+		<header id="header" class="flex column hidden-mobile">
 
 			<div id="logo" class="flex center">
 				<a href="#">
@@ -25,15 +26,15 @@
 			</div>
 			
 			<nav id="nav" class="flex flex-12 center">
-				<a class="nav-link flex-3" href="#about" onclick="closeNav()">Quiénes somos</a>
-				<a class="nav-link flex-3" href="#productos" onclick="closeNav()">Nuestros Productos</a>
+				<a class="nav-link flex-3" href="#galeria" onclick="closeNav()">Nuestros Productos</a>
+				<a class="nav-link flex-3" href="./contacto.html" onclick="closeNav()">Contacto</a>
+				<a class="nav-link flex-3" href="./historia.html" onclick="closeNav()">Quiénes somos</a>
 				<a class="nav-link flex-3" href="#tabla" onclick="closeNav()">Talles</a>
-				<a class="nav-link flex-3" href="#contacto" onclick="closeNav()">Contacto</a>
 			</nav>
 
 		</header>
 
-		<div id="cuerpo">
+		<main class="cuerpo">
 
 			<div class="flex center">
 					<img class="full-width padding" src="./img/distintos.png">
@@ -45,52 +46,21 @@
 				<img class="home-termica" src="./img/termica3.png">
 			</div>
 
-			<div id="about" class="flex column center">
+			<div id="galeria">
+				
+				<h2 class="subtitle">Conocé nuestro catálogo</h2>
 
-				<p class="about1">Somos una empresa de indumentaria deportiva cordobesa. Nuestra misión es no ser más de lo mismo, tratamos de diferenciarnos de las demás marcas a través de nuestros diseños, y a futuro queremos ser líderes en el mercado.</p>
-
-				<ul id="about-list">
-					<li>Para ello trabajamos con telas y productos de primera calidad. </li>
-					<li>Utilizamos costuras resistentes para darle la mejor vida útil a nuestros equipo.</li>
-					<li>Personalizamos el producto junto a la empresa patrocinadora (si tenés sponsor).</li>
-					<li>Ofrecemos amplia variedad de talles y modelos para todos los deportes.</li>
-				</ul>
-
-				<p class="about2">Estamos ubicados en el centro de la ciudad de Córdoba, por el momento sin oficinas comerciales, ya que todos nuestros canales de venta son de forma online, aunque no tenemos ningún inconveniente en programar reuniones con clientes si así lo solicitan.</p>
-
-			</div>
-
-			<div id="productos">
-
-				<div class="padding">
-					<ul id="no-list" class="flex column center">
-						<img src="./img/vector costura.png">
-						<li>COSTURAS PLANAS QUE EVITAN EL ROCE CON LA PIEL</li>
-						<img src="./img/vector temp.png">
-						<li>MANTIENE LA TEMPERATURA CORPORAL</li>
-						<img src="./img/vector soft.png">
-						<li>SUAVE AL TACTO</li>
-						<img src="./img/vector sport.png">
-						<li>APTA PARA TODO TIPO DE DEPORTES</li>
-					</ul>
+				<div class="flex together galeria wrap">
+					<a class="flex center catalogo flex-3" href="./catalogo/rombos.html"><img class="full-width" src="./img/rombos.png"></a>
+					<a class="flex center catalogo flex-3" href="./catalogo/rayas.html"><img class="full-width" src="./img/rayas.png"></a>
+					<a class="flex center catalogo flex-3" href="./catalogo/tattoo.html"><img class="full-width" src="./img/tattoo.png"></a>
+					<a class="flex center catalogo flex-3" href="./catalogo/rugby.html"><img class="full-width" src="./img/rugby.png"></a>
+					<a class="flex center catalogo flex-3" href="./catalogo/futbol.html"><img class="full-width" src="./img/futbol.png"></a>
+					<a class="flex center catalogo flex-3" href="./catalogo/heroes.html"><img class="full-width" src="./img/heroes.png"></a>
+					<a class="flex center catalogo flex-3" href="./catalogo/lisas.html"><img class="full-width" src="./img/lisas.png"></a>
+					<a class="flex center catalogo flex-3" href="#"><img class="full-width" src="./img/firma.png"></a>
 				</div>
 				
-				<div id="galeria">
-				
-					<h2 class="subtitle">Conocé nuestro catálogo</h2>
-
-					<div class="flex together galeria wrap">
-						<a class="flex center catalogo flex-3" href="rombo"><img class="full-width" src="./img/rombos.png"></a>
-						<a class="flex center catalogo flex-3" href="rayas"><img class="full-width" src="./img/rayas.png"></a>
-						<a class="flex center catalogo flex-3" href="tattoo"><img class="full-width" src="./img/tattoo.png"></a>
-						<a class="flex center catalogo flex-3" href="rugby"><img class="full-width" src="./img/rugby.png"></a>
-						<a class="flex center catalogo flex-3" href="futbol"><img class="full-width" src="./img/futbol.png"></a>
-						<a class="flex center catalogo flex-3" href="heroes"><img class="full-width" src="./img/heroes.png"></a>
-						<a class="flex center catalogo flex-3" href="lisas"><img class="full-width" src="./img/lisas.png"></a>
-						<a class="flex center catalogo flex-3" href="/"><img class="full-width" src="./img/firma.png"></a>
-					</div>
-					
-				</div>
 			</div>
 
 			<div id="tabla">
@@ -103,9 +73,13 @@
 
 			</div>
 
-		</div>
+		</main>
+
+		<footer id="footer">
+			<p>Santa louis ® , Copyright 2018, info@tiendasantalouis.com, Córdoba, Argentina.</p>
+		</footer>
 	
 	</body>
 
-<script type="text/javascript" src="./js/nav.js"></script>
+	<script type="text/javascript" src="./js/nav.js"></script>
 </html>

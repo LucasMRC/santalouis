@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SantaLouis</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/flex.css">
+		<link rel="stylesheet" type="text/css" href="../css/header-nav.css">
+		<link rel="shortcut icon" href="../img/SL icono.png" type="image/png">
+		<link rel="apple-touch-icon" href="../img/SL icono.png" type="image/png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+		<div id="close-nav" class="menu hidden hidden-desktop" onclick="closeNav()"><i class="fas fa-times"></i></div>
+		<div id="open-nav" class="menu hidden-desktop" onclick="openNav()"><i class="fas fa-bars"></i></div>
+
+		<header id="header" class="flex column hidden-mobile">
+
+			<div id="logo" class="flex center">
+				<a href="#">
+					<img src="../img/SantaLouisLogo.png">
+				</a>
+			</div>
+			
+			<nav id="nav" class="flex flex-12 center">
+				<a class="nav-link flex-3" href="../index.html" onclick="closeNav()">Nuestros Productos</a>
+				<a class="nav-link flex-3" href="../contacto.html" onclick="closeNav()">Contacto</a>
+				<a class="nav-link flex-3" href="../historia.html" onclick="closeNav()">Quiénes somos</a>
+				<a class="nav-link flex-3" href="../index.html#tabla" onclick="closeNav()">Talles</a>
+			</nav>
+
+		</header>
+
+		<main class="cuerpo">
+			
+			<div class="flex together galeria wrap">
+				
+				<a class="flex center catalogo flex-3" href="#"><img class="full-width" src="../img/rayas/azul-verde.png"></a>
+				<a class="flex center catalogo flex-3" href="#"><img class="full-width" src="../img/rayas/roja.png"></a>
+				<a class="flex center catalogo flex-3" href="#"><img class="full-width" src="../img/rayas/santaroja.png"></a>
+				<a class="flex center catalogo flex-3" href="#"><img class="full-width" src="../img/rayas/talleres.png"></a>
+				
+			</div>
+
+			
+		</main>
+
+		<footer id="footer">
+			<p>Santa louis ® , Copyright 2018, info@tiendasantalouis.com, Córdoba, Argentina.</p>
+		</footer>
+
+	</body>
+
+	<script type="text/javascript" src="../js/nav.js"></script>
+</html>
