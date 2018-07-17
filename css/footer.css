@@ -1,0 +1,30 @@
+#footer {
+	color: #fff;
+	padding: 1rem;
+	margin: 0;
+    background-color: #505050;
+    justify-content: space-around;
+}
+.fa-whatsapp {
+	font-size: 3.7rem;
+	color: green;
+}
+#redes {
+	font-size: 2rem;
+	width: 7%;
+}
+.fa-facebook-square {
+	color: #4267b2;
+}
+.fa-instagram {
+	color: #ca439a;
+}
+@media only screen and (max-width: 480px) {
+	#footer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	#redes {
+		width: 100%;
+	}
+}
