@@ -5,7 +5,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
-		<link rel="stylesheet" type="text/css" href="./css/footer.css">
+		<link rel="stylesheet" type="text/css" href="../css/footer.css">
 		<link rel="stylesheet" type="text/css" href="../css/flex.css">
 		<link rel="stylesheet" type="text/css" href="../css/header-nav.css">
 		<link rel="shortcut icon" href="../img/SL icono.png" type="image/png">
@@ -27,7 +27,7 @@
 			</div>
 			
 			<nav id="nav" class="flex flex-12 center">
-				<a class="nav-link flex-3" href="../index.html" onclick="closeNav()">Nuestros Productos</a>
+				<a class="nav-link flex-3" href="../index.html" onclick="closeNav()">Inicio</a>
 				<a class="nav-link flex-3" href="../contacto.html" onclick="closeNav()">Contacto</a>
 				<a class="nav-link flex-3" href="../historia.html" onclick="closeNav()">Quiénes somos</a>
 				<a class="nav-link flex-3" href="../index.html#tabla" onclick="closeNav()">Talles</a>
@@ -35,9 +35,29 @@
 
 		</header>
 
-		<main class="cuerpo">
+		<main class="flex mobile-column catalogo-padding">
 			
-			<div class="flex together galeria wrap">
+			<div id="indice-catalogo">
+				<table>
+					<tbody>
+						<tr><th>Catálogo</th></tr>
+						<tr><td><a class="link-catalogo" href="#">Equipos de Fútbol</a></td></tr>
+						<tr><td><a class="link-catalogo" href="./heroes.html">Superhéroes</a></td></tr>
+						<tr><td><a class="link-catalogo" href="./lisas.html">Lisas</a></td></tr>
+						<tr><td><a class="link-catalogo" href="./rayas.html">Rayadas</a></td></tr>
+						<tr><td><a class="link-catalogo" href="./rombos.html">Diseños con Rombos</a></td></tr>
+						<tr><td><a class="link-catalogo" href="./rugby.html">Equipos de Rugby</a></td></tr>
+						<tr><td><a class="link-catalogo" href="./tattoo.html">Mangas Tattoo</a></td></tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h2 class="stock-title">Equipos de Fútbol</h2>
+			</div>
+			
+
+			<div class="flex stock wrap">
 				<a class="flex center catalogo flex-3" href="#"><img class="full-width" src="../img/futbol/afa.png"></a>
 				<a class="flex center catalogo flex-3" href="#"><img class="full-width" src="../img/futbol/belgrano.png"></a>
 				<a class="flex center catalogo flex-3" href="#"><img class="full-width" src="../img/futbol/boca.png"></a>
@@ -53,6 +73,10 @@
 			</div>
 
 		</main>
+
+		<div class="separador">
+			<br>
+		</div>
 
 		<footer id="footer" class="flex">
 			<p>Santa louis ® , Copyright 2018, info@tiendasantalouis.com, Córdoba, Argentina.</p>

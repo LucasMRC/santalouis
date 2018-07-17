@@ -5,12 +5,13 @@
 body {
 	background-color: #ddd;
 	margin: 0;
-}
-main {
 	min-height: 100vh;
 }
-.cuerpo {
+.cuerpo-padding {
 	padding: 0 15%;
+}
+.catalogo-padding {
+	padding: 0 5%;
 }
 .padding {
 	padding: 2rem 0;
@@ -67,7 +68,7 @@ main {
 }
 .subtitle {
 	text-align: center;
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 100;
 	padding: 1rem; 
 	background-color: #fff0;
@@ -79,7 +80,7 @@ main {
 }
 .catalogo {
 	min-width: 150px;
-	max-height: auto;
+	max-height: 200px;
 }
 
 }
@@ -133,7 +134,7 @@ legend {
 .galeria {
 	margin-top: 2rem;
 }
-h2 {
+#vestimos-equipo h2, #wspp h2 {
 	font-size: 3rem;
     text-align: center;
     font-weight: 700;
@@ -144,6 +145,32 @@ h2 {
 .letter {
 	font-size: 1.5rem;
 }
+#indice-catalogo {
+	width: 30%;
+	font-size: 1.7rem;
+	text-align: left;
+	margin-right: 3rem;
+}
+th {
+	font-size: 2rem;
+	color: #525252;
+}
+.link-catalogo {
+	text-decoration: none;
+	color: #414141;
+}
+.link-catalogo:hover {
+	color: #999997;	
+}
+.stock {
+	width: 80%;
+}
+.stock-title {
+	display: none;
+	text-align: center;
+	font-size: 2rem;
+	text-decoration: underline;
+}
 @media only screen and (max-width: 480px) {
 	#cuerpo {
 		padding: 0 3%;
@@ -153,5 +180,34 @@ h2 {
 	}
 	fieldset {
 		width: 65%;
+	}
+	.stock {
+		margin-top: 2rem;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.mobile-column {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	#indice-catalogo {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-bottom: 1rem;
+  		background-color: #868686;
+  	}
+  	.link-catalogo {
+  		color: #ddd;
+  	}
+  	th {
+  		color: #ddd;
+  	}
+	.stock-title {
+		display: block;
 	}
 }
