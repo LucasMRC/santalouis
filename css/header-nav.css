@@ -15,7 +15,6 @@ header {
 	padding: .5rem;
 	box-shadow: 0 .4rem .4rem #b7b7b7;
 	display: block;
-	margin-bottom: 3rem; 
 }
 header:after {
 	content: "";

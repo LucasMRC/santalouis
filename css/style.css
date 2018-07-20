@@ -7,8 +7,44 @@ body {
 	margin: 0;
 	min-height: 100vh;
 }
+#contacto {
+	min-height: 70vh;
+}
 .cuerpo-padding {
 	padding: 0 15%;
+	padding-top: 3rem;
+}
+.contact-main {
+	width: auto;
+	position: relative;
+	top: 0;
+	display: block;
+}
+.contact-main:after {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: -1;
+}
+.contact-main:before {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2d2d2d;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: -1;
 }
 .catalogo-padding {
 	padding: 0 5%;
@@ -75,6 +111,11 @@ body {
 	margin: 1rem;
 	color: #000;
 }
+.contact-h2 {
+	font-weight: 700;
+    color: #ddd;
+    text-shadow: 0.1rem 0.1rem 0.1rem #505050;
+}
 #talles {
  	margin: 3rem auto;
 }
@@ -89,33 +130,25 @@ body {
 	font-size: 1.33rem;
 	text-align: justify;
 }
-input {
+
+.email {
 	margin: .5rem;
-	text-align: center;
-	padding: .3rem 3rem;
-	border: .1rem solid #505050;
-	border-radius: .3rem;
-	font-weight: 700;
+    text-align: center;
+    padding: .5rem 5.5rem;
+    border: .1rem solid #505050;
+    border-radius: .7rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #505050;
 }
-textarea {
-	width: 80%;
-	height: 7rem;
-	margin: .5rem;
-	border: .1rem solid #505050;
-	border-radius: .3rem;
-	font-weight: 700;
-}
-fieldset {
-	width: 70%;
-    border: none;
-}
-#submit {
+.button {
 	background-color: #505050;
 	color: #ddd;
 	margin-bottom: 3rem;
-}
-legend {
-	font-family: "open sans condensed", sans-serif, helvetica;
+	padding: 0.3rem 2.5rem;
+	border-radius: .5em;
+	border: .1rem solid #ddd;
+    box-shadow: 0.1rem 0.1rem 0.1rem #505050;
 }
 .avisos {
 	background-repeat: no-repeat;
@@ -141,9 +174,6 @@ legend {
     color: #FFF;
     line-height: 2;
     margin: 0;
-}
-.letter {
-	font-size: 1.5rem;
 }
 #indice-catalogo {
 	width: 30%;
@@ -209,5 +239,8 @@ th {
   	}
 	.stock-title {
 		display: block;
+	}
+	.catalogo-padding {
+		padding: 0;
 	}
 }
